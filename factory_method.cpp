@@ -45,5 +45,4 @@ int main()
     auto p1 = PersonFactory::getTeacher();
     p1.display();
     return 0;
-    
 }
