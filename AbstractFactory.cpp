@@ -136,3 +136,22 @@ int main(int argc, char* argv[])
 
     return 0;
 }
+
+/*
+When to use Abstract Factory Pattern:
+1. Abstract factory pattern in useful when the client needs to create objects which are somehow related.
+    If we need to create the family of related or dependent objects, then we can use Abstract Factory Pattern.
+
+2. This pattern is particularly useful when the client doesn't know exactly what type to create.
+    As an example, let's say a Showroom exclusively selling cellphones gets a query for the smart phones made by Samsung.
+    Here we don't know the exact type of object to be created (assuming all the information for a phone is wrapped in 
+    the form of a concrete object). But we do know that we are looking for smart phones that are manufactured by Samsung.
+    This information can actually be utilized if our design has Abstract factory implementation.
+
+Steps for Abstract design pattern:
+Create as Below :
+    a. AbstractFactory: declares an interface for operations that create abstract products
+    b. ConcreteFactory: implements the operations to create concrete product objects
+    c. AbstractProduct: declares an interface for a type of product object
+    d. Product: defines a product object to be created by the corresponding concrete factory implements the AbstractProduct interface
+    e. Client: main program : uses interfaces declared by AbstractFactory and AbstractProduct classes
