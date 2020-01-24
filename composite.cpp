@@ -111,9 +111,14 @@ main()
 }
 
 /*When to use composite design pattern
-1. 
+1. Composite pattern is used where we need to treat a group of objects in similar way as a single object.
+2. Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy. 
+3. This type of design pattern comes under structural pattern as this pattern creates a tree structure of group of objects.
 /*
 
 /*Steps to use composite design pattern
-1. 
+1. Create an "interface" (lowest common denominator) that can make all concrete classes "interchangeable"
+2. Identify and create the concrete the scalar/primitive class
+3. create the concrete class for vector/container classes
+4. create client program for using both primitive type and composite/container classes.
 */
